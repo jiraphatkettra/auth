@@ -1,0 +1,98 @@
+@import "tailwindcss";
+
+/* ============================================================================
+   Apple Pro Design Tokens — Tailwind v4 CSS-based config
+   Inspired by next-course-hub, Apple.com dark mode, VisionOS aesthetics
+   ============================================================================ */
+@theme {
+  --color-surface: #000000;
+  --color-surface-raised: #0d0d0f;
+  --color-surface-card: rgba(255, 255, 255, 0.035);
+  --color-surface-card-hover: rgba(255, 255, 255, 0.065);
+  --color-border: rgba(255, 255, 255, 0.08);
+  --color-border-hover: rgba(255, 255, 255, 0.18);
+  --color-border-glow: rgba(41, 151, 255, 0.4);
+  --color-text-primary: #f5f5f7;
+  --color-text-secondary: #a1a1a6;
+  --color-text-muted: #86868b;
+  --color-accent: #2997ff;
+  --color-accent-hover: #0077ed;
+  --color-accent-subtle: rgba(41, 151, 255, 0.12);
+  --color-favorite: #ff2d55;
+  --color-favorite-subtle: rgba(255, 45, 85, 0.12);
+  --color-success: #30d158;
+  --color-danger: #ff453a;
+}
+
+/* Custom Apple Glass & Specular highlights */
+.apple-glass {
+  background: rgba(20, 20, 24, 0.65);
+  backdrop-filter: blur(24px) saturate(180%);
+  -webkit-backdrop-filter: blur(24px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.apple-card {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.05) 0%,
+    rgba(255, 255, 255, 0.015) 100%
+  );
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 4px 24px -1px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+.apple-card:hover {
+  border-color: rgba(255, 255, 255, 0.16);
+  box-shadow: 0 12px 36px -2px rgba(0, 0, 0, 0.7), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+.text-gradient-apple {
+  background: linear-gradient(180deg, #ffffff 20%, rgba(255, 255, 255, 0.65) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-blue {
+  background: linear-gradient(135deg, #2997ff 0%, #90b8ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+body {
+  background-color: #000000;
+  color: #f5f5f7;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "Segoe UI", Roboto, "Helvetica Neue", "Sarabun", sans-serif;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Accessible Form error state styling adhering to lab sheet */
+input[aria-invalid="true"],
+select[aria-invalid="true"] {
+  border-color: #ff453a !important;
+  background-color: rgba(255, 69, 58, 0.08) !important;
+}
+
+input[aria-invalid="true"]:focus,
+select[aria-invalid="true"]:focus {
+  box-shadow: 0 0 0 3px rgba(255, 69, 58, 0.25) !important;
+}
+
+/* Custom scrollbar for table/container */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.2);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
