@@ -2,8 +2,8 @@
 
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { CATEGORIES, ProductDraftSchema } from "@/lib/products";
-import type { Product, ProductDraft } from "@/lib/products";
+import { CATEGORIES, ProductDraftSchema } from "@/lib/products-lab11";
+import type { Product, ProductDraft } from "@/lib/products-lab11";
 import { IconPlus, IconEdit, IconCheck, IconClose } from "./Icons";
 
 type ProductFormProps = {

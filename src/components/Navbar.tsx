@@ -18,11 +18,11 @@ export default function Navbar() {
         <div className="flex items-center gap-4 text-xs">
           <div className="flex items-center gap-1.5 text-[#86868b]">
             <span className="h-1.5 w-1.5 rounded-full bg-[#30d158]" />
-            <span>DummyJSON API</span>
+            <span>Google OAuth</span>
           </div>
           <span className="text-white/20 hidden sm:inline">•</span>
           <span className="text-[#a1a1a6] hidden sm:inline">
-            Lab 11: RHF & Zod
+            Lab 12c: Auth.js
           </span>
         </div>
       </div>

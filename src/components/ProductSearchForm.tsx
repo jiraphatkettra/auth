@@ -2,8 +2,8 @@
 
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { SORT_FIELDS, SearchQuerySchema, defaultQuery } from "@/lib/products";
-import type { SearchQuery } from "@/lib/products";
+import { SORT_FIELDS, SearchQuerySchema, defaultQuery } from "@/lib/products-lab11";
+import type { SearchQuery } from "@/lib/products-lab11";
 import { IconSearch } from "./Icons";
 
 type ProductSearchFormProps = {

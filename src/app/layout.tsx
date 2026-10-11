@@ -3,8 +3,8 @@ import Navbar from "@/components/Navbar";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "รายการสินค้า - Product Explorer",
-  description: "ระบบจัดการและสำรวจรายการสินค้าด้วย React Hook Form, Zod และ External API",
+  title: "รายการสินค้า - Product Explorer (Google OAuth)",
+  description: "ระบบจัดการและสำรวจรายการสินค้าด้วย Google OAuth และ NextAuth / Auth.js (Lab 12c)",
 };
 
 export default function RootLayout({

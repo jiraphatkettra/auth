@@ -3,13 +3,13 @@
 import { useEffect, useState } from "react";
 import ProductSearchForm from "./ProductSearchForm";
 import ProductForm from "./ProductForm";
-import { defaultQuery, fetchProducts } from "@/lib/products";
+import { defaultQuery, fetchProducts } from "@/lib/products-lab11";
 import type {
   Product,
   ProductDraft,
   ProductList,
   SearchQuery,
-} from "@/lib/products";
+} from "@/lib/products-lab11";
 import {
   IconRefresh,
   IconPackage,
